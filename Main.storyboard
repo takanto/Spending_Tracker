@@ -1,0 +1,847 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0K2-Xx-qun">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Baby Doll.ttf">
+            <string>Baby-Doll</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--SecondViewController-->
+        <scene sceneID="HvN-dL-6kc">
+            <objects>
+                <viewController storyboardIdentifier="secondview" useStoryboardIdentifierAsRestorationIdentifier="YES" id="f2z-tX-1KM" userLabel="SecondViewController" customClass="SecondViewController" customModule="Money" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XLZ-VO-16J">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yue-eT-JW4">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="gUb-a7-nPG">
+                                        <rect key="frame" x="0.0" y="40" width="414" height="250"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iHg-vh-NSS">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="WUe-fW-GTt"/>
+                                                    <constraint firstAttribute="height" constant="250" id="icC-dv-XeQ"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="gUb-a7-nPG" firstAttribute="leading" secondItem="lOC-Di-Nge" secondAttribute="leading" id="2CS-4o-Yo9"/>
+                                    <constraint firstItem="gUb-a7-nPG" firstAttribute="bottom" secondItem="lOC-Di-Nge" secondAttribute="bottom" constant="40" id="LR2-2G-Who"/>
+                                    <constraint firstItem="gUb-a7-nPG" firstAttribute="width" secondItem="mSc-qh-kPb" secondAttribute="width" id="hLd-0V-Z8P"/>
+                                    <constraint firstItem="gUb-a7-nPG" firstAttribute="trailing" secondItem="lOC-Di-Nge" secondAttribute="trailing" id="hai-a9-Ehm"/>
+                                    <constraint firstItem="gUb-a7-nPG" firstAttribute="top" secondItem="lOC-Di-Nge" secondAttribute="top" constant="40" id="sjH-Yp-qgu"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="lOC-Di-Nge"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="mSc-qh-kPb"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="adL-OH-T56"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Yue-eT-JW4" secondAttribute="bottom" id="9ux-p0-nmR"/>
+                            <constraint firstItem="Yue-eT-JW4" firstAttribute="leading" secondItem="adL-OH-T56" secondAttribute="leading" id="KB9-up-eMb"/>
+                            <constraint firstItem="Yue-eT-JW4" firstAttribute="centerX" secondItem="XLZ-VO-16J" secondAttribute="centerX" id="M6I-Uc-OdP"/>
+                            <constraint firstItem="Yue-eT-JW4" firstAttribute="trailing" secondItem="adL-OH-T56" secondAttribute="trailing" id="P2f-el-qKd"/>
+                            <constraint firstItem="Yue-eT-JW4" firstAttribute="centerY" secondItem="XLZ-VO-16J" secondAttribute="centerY" id="TPp-aL-eRg"/>
+                            <constraint firstItem="Yue-eT-JW4" firstAttribute="top" secondItem="XLZ-VO-16J" secondAttribute="top" id="dI4-hd-NY3"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Charts" image="circle.fill" catalog="system" id="oVX-Yi-exy"/>
+                    <connections>
+                        <outlet property="StackView" destination="gUb-a7-nPG" id="3hO-TI-JKs"/>
+                        <outlet property="TitleView" destination="iHg-vh-NSS" id="Nyo-HO-ovq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eFy-Nq-WZ9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="713.04347826086962" y="509.59821428571428"/>
+        </scene>
+        <!--ThirdViewController-->
+        <scene sceneID="GYp-nK-5nF">
+            <objects>
+                <viewController id="FNg-5l-OeN" userLabel="ThirdViewController" customClass="ThirdViewController" customModule="Money" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6EG-lY-j0T">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZCD-Lx-dJZ">
+                                <rect key="frame" x="40" y="114" width="138.5" height="32.5"/>
+                                <fontDescription key="fontDescription" name="Baby-Doll" family="Baby Doll" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9gf-G4-fjH">
+                                <rect key="frame" x="120" y="210.5" width="160" height="35"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Buddy Name">
+                                    <fontDescription key="titleFontDescription" name="Baby-Doll" family="Baby Doll" pointSize="23"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="BuddyNameClicked:" destination="FNg-5l-OeN" eventType="touchUpInside" id="bgg-GF-A2L"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QRD-3i-sSy">
+                                <rect key="frame" x="134" y="279" width="133.5" height="31"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Category Setting">
+                                    <fontDescription key="titleFontDescription" name="Baby-Doll" family="Baby Doll" pointSize="25"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="kW1-7S-cTy" kind="presentation" modalPresentationStyle="fullScreen" id="gdh-vH-c3h"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dead Buddy.png" translatesAutoresizingMaskIntoConstraints="NO" id="ehO-YB-ck0">
+                                <rect key="frame" x="157" y="666" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="3ov-4f-Hdj"/>
+                                    <constraint firstAttribute="width" constant="100" id="4aE-ID-9dX"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="3tA-2M-wg8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="QRD-3i-sSy" firstAttribute="centerX" secondItem="6EG-lY-j0T" secondAttribute="centerX" id="8fY-sa-E5h"/>
+                            <constraint firstItem="9gf-G4-fjH" firstAttribute="centerX" secondItem="6EG-lY-j0T" secondAttribute="centerX" constant="-7" id="Chx-Ks-fNI"/>
+                            <constraint firstItem="ZCD-Lx-dJZ" firstAttribute="leading" secondItem="3tA-2M-wg8" secondAttribute="leading" constant="40" id="VON-uT-LVY"/>
+                            <constraint firstItem="3tA-2M-wg8" firstAttribute="bottom" secondItem="ehO-YB-ck0" secondAttribute="bottom" constant="47" id="VkA-3y-2U0"/>
+                            <constraint firstItem="QRD-3i-sSy" firstAttribute="top" secondItem="9gf-G4-fjH" secondAttribute="bottom" constant="16" id="ffw-HD-8Qp"/>
+                            <constraint firstItem="9gf-G4-fjH" firstAttribute="top" secondItem="ZCD-Lx-dJZ" secondAttribute="bottom" constant="64" id="kSe-Tr-Gcz"/>
+                            <constraint firstItem="ZCD-Lx-dJZ" firstAttribute="top" secondItem="3tA-2M-wg8" secondAttribute="top" constant="70" id="l7O-0V-NVm"/>
+                            <constraint firstItem="ehO-YB-ck0" firstAttribute="centerX" secondItem="6EG-lY-j0T" secondAttribute="centerX" id="vg2-yO-D8L"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Settings" image="circle.fill" catalog="system" id="CDr-3P-OLr"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sRj-q7-DfD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="713.04347826086962" y="1203.3482142857142"/>
+        </scene>
+        <!--ThridViewController2-->
+        <scene sceneID="oju-QD-YJS">
+            <objects>
+                <viewController id="kW1-7S-cTy" userLabel="ThridViewController2" customClass="ThridViewController2" customModule="Money" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hvX-cS-RYi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="XMM-0Z-OP1">
+                                <rect key="frame" x="0.0" y="44" width="414" height="587"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="esx-ca-MvL">
+                                <rect key="frame" x="156" y="677" width="102" height="37"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Modify">
+                                    <fontDescription key="titleFontDescription" name="Baby-Doll" family="Baby Doll" pointSize="25"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="ModifyClicked:" destination="kW1-7S-cTy" eventType="touchUpInside" id="oZn-Tv-a59"/>
+                                    <segue destination="kui-cT-Vlv" kind="show" id="fs1-Py-DeU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lqd-OR-fps">
+                                <rect key="frame" x="279" y="683" width="49" height="31"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="+">
+                                    <fontDescription key="titleFontDescription" name="Baby-Doll" family="Baby Doll" pointSize="50"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="NewClicked:" destination="kW1-7S-cTy" eventType="touchUpInside" id="5Ih-g6-KJO"/>
+                                    <segue destination="kui-cT-Vlv" kind="show" id="MgL-f8-oqw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vh6-6L-8pe">
+                                <rect key="frame" x="95" y="683" width="44" height="31"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="-">
+                                    <fontDescription key="titleFontDescription" name="Baby-Doll" family="Baby Doll" pointSize="50"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="RemoveClicked:" destination="kW1-7S-cTy" eventType="touchUpInside" id="9rt-d8-4zr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yg8-lD-U9n">
+                                <rect key="frame" x="20" y="812" width="374" height="31"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Back">
+                                    <fontDescription key="titleFontDescription" name="Baby-Doll" family="Baby Doll" pointSize="25"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="YmY-jr-CfK" kind="unwind" identifier="greensegue1" unwindAction="greensegueWithSegue:" id="76V-dc-fdc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="VHA-jp-jGO"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yg8-lD-U9n" firstAttribute="centerX" secondItem="hvX-cS-RYi" secondAttribute="centerX" id="HNc-zR-ChE"/>
+                            <constraint firstItem="XMM-0Z-OP1" firstAttribute="top" secondItem="VHA-jp-jGO" secondAttribute="top" id="NN6-Do-bw0"/>
+                            <constraint firstItem="VHA-jp-jGO" firstAttribute="bottom" secondItem="esx-ca-MvL" secondAttribute="bottom" constant="148" id="OA6-m9-oox"/>
+                            <constraint firstItem="esx-ca-MvL" firstAttribute="leading" secondItem="Vh6-6L-8pe" secondAttribute="trailing" constant="17" id="Ofb-LT-qVA"/>
+                            <constraint firstItem="esx-ca-MvL" firstAttribute="centerX" secondItem="hvX-cS-RYi" secondAttribute="centerX" id="Qtd-Co-Zpf"/>
+                            <constraint firstItem="XMM-0Z-OP1" firstAttribute="trailing" secondItem="VHA-jp-jGO" secondAttribute="trailing" id="Vmh-yA-t1W"/>
+                            <constraint firstItem="esx-ca-MvL" firstAttribute="top" secondItem="XMM-0Z-OP1" secondAttribute="bottom" constant="46" id="VuM-lw-naz"/>
+                            <constraint firstItem="VHA-jp-jGO" firstAttribute="bottom" secondItem="yg8-lD-U9n" secondAttribute="bottom" constant="19" id="h9e-jt-G4b"/>
+                            <constraint firstItem="Lqd-OR-fps" firstAttribute="leading" secondItem="esx-ca-MvL" secondAttribute="trailing" constant="20.5" id="ijV-Mv-QlL"/>
+                            <constraint firstItem="XMM-0Z-OP1" firstAttribute="leading" secondItem="VHA-jp-jGO" secondAttribute="leading" id="k1P-7E-0mv"/>
+                            <constraint firstItem="Lqd-OR-fps" firstAttribute="bottom" secondItem="Vh6-6L-8pe" secondAttribute="bottom" id="p8L-1g-5PI"/>
+                            <constraint firstItem="esx-ca-MvL" firstAttribute="bottom" secondItem="Vh6-6L-8pe" secondAttribute="bottom" id="v3E-wo-2Xp"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="SEJ-e4-X6b"/>
+                    <connections>
+                        <outlet property="Modify" destination="esx-ca-MvL" id="yHT-mh-Vkf"/>
+                        <outlet property="New" destination="Lqd-OR-fps" id="2Ag-k4-Axx"/>
+                        <outlet property="Remove" destination="Vh6-6L-8pe" id="x29-wx-Ddz"/>
+                        <outlet property="tableView" destination="XMM-0Z-OP1" id="boF-k6-YBV"/>
+                        <segue destination="YmY-jr-CfK" kind="unwind" unwindAction="greensegueWithSegue:" id="hgL-b5-eOC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zem-An-zMm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="YmY-jr-CfK" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1489.8550724637682" y="1202.6785714285713"/>
+        </scene>
+        <!--ThirdViewController3-->
+        <scene sceneID="R5t-VC-w9f">
+            <objects>
+                <viewController id="kui-cT-Vlv" userLabel="ThirdViewController3" customClass="ThirdViewController3" customModule="Money" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WvM-re-EkM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="txc-hW-14G">
+                                <rect key="frame" x="50" y="252" width="63" height="18.5"/>
+                                <fontDescription key="fontDescription" name="Baby-Doll" family="Baby Doll" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="upE-XL-7H8">
+                                <rect key="frame" x="131" y="244" width="153" height="34"/>
+                                <fontDescription key="fontDescription" name="Baby-Doll" family="Baby Doll" pointSize="19"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Goal:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mDq-aY-7Si">
+                                <rect key="frame" x="56" y="306" width="48.5" height="18.5"/>
+                                <fontDescription key="fontDescription" name="Baby-Doll" family="Baby Doll" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Color:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f4E-g8-ZvK">
+                                <rect key="frame" x="50" y="366" width="54" height="18.5"/>
+                                <fontDescription key="fontDescription" name="Baby-Doll" family="Baby Doll" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="ir4-ap-kfC">
+                                <rect key="frame" x="128.5" y="366" width="165" height="187"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="HEv-2s-QDR">
+                                        <rect key="frame" x="0.0" y="0.0" width="165" height="31"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CZ4-mS-E4g">
+                                                <rect key="frame" x="0.0" y="0.0" width="45" height="31"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="circle.fill" catalog="system">
+                                                    <color key="baseForegroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="colorSelected:" destination="kui-cT-Vlv" eventType="touchUpInside" id="7r1-L0-Hh0"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="200" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OiB-2T-JMt">
+                                                <rect key="frame" x="60" y="0.0" width="45" height="31"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="circle.fill" catalog="system">
+                                                    <color key="baseForegroundColor" red="1" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="colorSelected:" destination="kui-cT-Vlv" eventType="touchUpInside" id="9Pz-0f-6LQ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="300" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hc1-Mo-V5a">
+                                                <rect key="frame" x="120" y="0.0" width="45" height="31"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="circle.fill" catalog="system">
+                                                    <color key="baseForegroundColor" red="0.0" green="0.0" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="colorSelected:" destination="kui-cT-Vlv" eventType="touchUpInside" id="e0j-NN-d60"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="021-3o-wUJ">
+                                        <rect key="frame" x="0.0" y="52" width="165" height="31"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="400" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GGg-DE-z3C">
+                                                <rect key="frame" x="0.0" y="0.0" width="45" height="31"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="circle.fill" catalog="system">
+                                                    <color key="baseForegroundColor" red="0.0" green="1" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="colorSelected:" destination="kui-cT-Vlv" eventType="touchUpInside" id="6Zk-uY-E6W"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="500" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vJA-6Y-9Kx">
+                                                <rect key="frame" x="60" y="0.0" width="45" height="31"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="circle.fill" catalog="system">
+                                                    <color key="baseForegroundColor" red="1" green="1" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="colorSelected:" destination="kui-cT-Vlv" eventType="touchUpInside" id="OZT-CU-wD5"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="600" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d82-x8-pCT">
+                                                <rect key="frame" x="120" y="0.0" width="45" height="31"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="circle.fill" catalog="system">
+                                                    <color key="baseForegroundColor" red="1" green="0.58789670717466125" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="colorSelected:" destination="kui-cT-Vlv" eventType="touchUpInside" id="B9N-l7-zSB"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="c1j-ud-IQv">
+                                        <rect key="frame" x="0.0" y="104" width="165" height="31"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="700" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zWR-LK-d2m">
+                                                <rect key="frame" x="0.0" y="0.0" width="45" height="31"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="circle.fill" catalog="system">
+                                                    <color key="baseForegroundColor" red="0.58827700314821896" green="0.0" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="colorSelected:" destination="kui-cT-Vlv" eventType="touchUpInside" id="ETV-BE-kB0"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="800" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dUx-pF-zAt">
+                                                <rect key="frame" x="60" y="0.0" width="45" height="31"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="circle.fill" catalog="system">
+                                                    <color key="baseForegroundColor" red="0.0" green="0.66617066710145323" blue="0.74532579542039989" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="colorSelected:" destination="kui-cT-Vlv" eventType="touchUpInside" id="xwO-ui-qX2"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="900" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4vJ-b9-IFp">
+                                                <rect key="frame" x="120" y="0.0" width="45" height="31"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="circle.fill" catalog="system">
+                                                    <color key="baseForegroundColor" red="1" green="0.0" blue="0.58773878404310542" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="colorSelected:" destination="kui-cT-Vlv" eventType="touchUpInside" id="NkG-Iu-COV"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="AOD-0h-0Kg">
+                                        <rect key="frame" x="0.0" y="156" width="165" height="31"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="1000" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CZb-qY-zpY">
+                                                <rect key="frame" x="0.0" y="0.0" width="45" height="31"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="circle.fill" catalog="system">
+                                                    <color key="baseForegroundColor" red="0.51030459103884396" green="0.51007656284145542" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="colorSelected:" destination="kui-cT-Vlv" eventType="touchUpInside" id="sRG-qB-mF0"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="1100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mkr-DX-wkI">
+                                                <rect key="frame" x="60" y="0.0" width="45" height="31"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="circle.fill" catalog="system">
+                                                    <color key="baseForegroundColor" red="0.51940949980195583" green="1" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="colorSelected:" destination="kui-cT-Vlv" eventType="touchUpInside" id="hIE-VH-ltr"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="1200" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hrE-46-NDw">
+                                                <rect key="frame" x="120" y="0.0" width="45" height="31"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="circle.fill" catalog="system">
+                                                    <color key="baseForegroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.20061041384327169" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="colorSelected:" destination="kui-cT-Vlv" eventType="touchUpInside" id="i2l-B6-EgG"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Yl-KK-Saa">
+                                <rect key="frame" x="177.5" y="176" width="65.5" height="23"/>
+                                <fontDescription key="fontDescription" name="Baby-Doll" family="Baby Doll" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aoj-eV-B8f">
+                                <rect key="frame" x="177" y="694" width="61" height="44"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Set">
+                                    <fontDescription key="titleFontDescription" name="Baby-Doll" family="Baby Doll" pointSize="25"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="SetClicked:" destination="kui-cT-Vlv" eventType="touchUpInside" id="9Cs-dU-njt"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GMN-DB-5I0">
+                                <rect key="frame" x="129" y="298" width="164" height="34"/>
+                                <fontDescription key="fontDescription" name="Baby-Doll" family="Baby Doll" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="pgE-0L-lJc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="f4E-g8-ZvK" firstAttribute="leading" secondItem="pgE-0L-lJc" secondAttribute="leading" constant="50" id="106-Wn-a00"/>
+                            <constraint firstItem="f4E-g8-ZvK" firstAttribute="leading" secondItem="txc-hW-14G" secondAttribute="leading" id="1x4-En-MQ9"/>
+                            <constraint firstItem="ir4-ap-kfC" firstAttribute="top" secondItem="f4E-g8-ZvK" secondAttribute="top" id="3aq-vx-aLW"/>
+                            <constraint firstItem="Aoj-eV-B8f" firstAttribute="centerX" secondItem="WvM-re-EkM" secondAttribute="centerX" id="7gP-f0-UnD"/>
+                            <constraint firstItem="f4E-g8-ZvK" firstAttribute="top" secondItem="txc-hW-14G" secondAttribute="bottom" constant="95.5" id="D4J-sh-BNy"/>
+                            <constraint firstItem="GMN-DB-5I0" firstAttribute="centerY" secondItem="mDq-aY-7Si" secondAttribute="centerY" constant="2.75" id="N4f-Uq-agL"/>
+                            <constraint firstItem="txc-hW-14G" firstAttribute="top" secondItem="pgE-0L-lJc" secondAttribute="top" constant="208" id="RFm-eV-QAu"/>
+                            <constraint firstItem="upE-XL-7H8" firstAttribute="centerY" secondItem="txc-hW-14G" secondAttribute="centerY" id="VKu-gR-JJI"/>
+                            <constraint firstItem="pgE-0L-lJc" firstAttribute="bottom" secondItem="Aoj-eV-B8f" secondAttribute="bottom" constant="100" id="VyT-6o-aSY"/>
+                            <constraint firstItem="7Yl-KK-Saa" firstAttribute="top" secondItem="pgE-0L-lJc" secondAttribute="top" constant="132" id="Z31-Fd-cIn"/>
+                            <constraint firstItem="txc-hW-14G" firstAttribute="leading" secondItem="pgE-0L-lJc" secondAttribute="leading" constant="50" id="Zxr-Nh-rMs"/>
+                            <constraint firstItem="upE-XL-7H8" firstAttribute="leading" secondItem="txc-hW-14G" secondAttribute="trailing" constant="-2" id="dVq-Nb-TkL"/>
+                            <constraint firstItem="ir4-ap-kfC" firstAttribute="centerX" secondItem="WvM-re-EkM" secondAttribute="centerX" constant="3.75" id="dcn-pg-SXE"/>
+                            <constraint firstItem="mDq-aY-7Si" firstAttribute="leading" secondItem="txc-hW-14G" secondAttribute="leading" constant="6" id="eyC-Qp-0Xa"/>
+                            <constraint firstItem="7Yl-KK-Saa" firstAttribute="centerX" secondItem="WvM-re-EkM" secondAttribute="centerX" constant="3.25" id="gwA-ht-Icm"/>
+                            <constraint firstItem="GMN-DB-5I0" firstAttribute="leading" secondItem="mDq-aY-7Si" secondAttribute="trailing" constant="6.5" id="lYm-T6-6KU"/>
+                            <constraint firstItem="mDq-aY-7Si" firstAttribute="top" secondItem="txc-hW-14G" secondAttribute="bottom" constant="35.5" id="toF-4g-4WP"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="2RP-7c-iqg"/>
+                    <connections>
+                        <outlet property="Goal" destination="GMN-DB-5I0" id="gdi-oU-I5T"/>
+                        <outlet property="LabelText" destination="7Yl-KK-Saa" id="h8F-le-LEt"/>
+                        <outlet property="Name" destination="upE-XL-7H8" id="zqV-3k-4wO"/>
+                        <segue destination="R0l-Hh-o89" kind="unwind" identifier="greensegue" unwindAction="greensegueWithSegue:" id="5j0-R0-fGO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YnA-MJ-gzW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="R0l-Hh-o89" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2328.985507246377" y="1202.6785714285713"/>
+        </scene>
+        <!--FirstViewController-->
+        <scene sceneID="h93-YL-qij">
+            <objects>
+                <viewController storyboardIdentifier="firstview" useStoryboardIdentifierAsRestorationIdentifier="YES" id="iJw-8r-DDF" userLabel="FirstViewController" customClass="FirstViewController" customModule="Money" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lQ1-Nh-nEt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00,000" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PJS-x8-fkK">
+                                <rect key="frame" x="131.5" y="248" width="151.5" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="7MW-fq-4PT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Baby-Doll" family="Baby Doll" pointSize="55"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="caP-pa-Eb9">
+                                <rect key="frame" x="164" y="69" width="86.5" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FVo-Qx-4IQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="86.5" height="30"/>
+                                        <fontDescription key="fontDescription" name="Baby-Doll" family="Baby Doll" pointSize="33"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="bottom" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tgt-44-lnI">
+                                <rect key="frame" x="81" y="306" width="253" height="220"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="253" id="QHS-lH-vCQ"/>
+                                    <constraint firstAttribute="height" constant="220" id="pUn-fe-LKM"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ivm-0f-VPM">
+                                <rect key="frame" x="177.5" y="699.5" width="59" height="77.5"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="+">
+                                    <fontDescription key="titleFontDescription" name="Baby-Doll" family="Baby Doll" pointSize="70"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="Wda-4o-dOj" kind="presentation" modalPresentationStyle="fullScreen" id="477-kM-lCR"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UyL-qq-HKn">
+                                <rect key="frame" x="157" y="526" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="F9W-5A-ouF"/>
+                                    <constraint firstAttribute="height" constant="100" id="hXa-3Q-i3b"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="yb2-Pl-pwR"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tgt-44-lnI" firstAttribute="top" secondItem="PJS-x8-fkK" secondAttribute="bottom" constant="18" id="1kB-Ug-5oa"/>
+                            <constraint firstItem="caP-pa-Eb9" firstAttribute="centerX" secondItem="lQ1-Nh-nEt" secondAttribute="centerX" id="38J-Qr-zU2"/>
+                            <constraint firstItem="UyL-qq-HKn" firstAttribute="centerX" secondItem="lQ1-Nh-nEt" secondAttribute="centerX" id="82W-Ut-VG6"/>
+                            <constraint firstItem="PJS-x8-fkK" firstAttribute="centerY" secondItem="lQ1-Nh-nEt" secondAttribute="centerY" constant="-180" id="J0l-CO-GjX"/>
+                            <constraint firstItem="tgt-44-lnI" firstAttribute="centerX" secondItem="lQ1-Nh-nEt" secondAttribute="centerX" constant="0.5" id="M5g-wx-mhs"/>
+                            <constraint firstItem="UyL-qq-HKn" firstAttribute="top" secondItem="tgt-44-lnI" secondAttribute="bottom" id="Yif-Mm-30q"/>
+                            <constraint firstItem="caP-pa-Eb9" firstAttribute="top" secondItem="yb2-Pl-pwR" secondAttribute="top" constant="25" id="bQW-o8-QaX"/>
+                            <constraint firstItem="yb2-Pl-pwR" firstAttribute="bottom" secondItem="ivm-0f-VPM" secondAttribute="bottom" constant="36" id="dhH-TD-qiX"/>
+                            <constraint firstItem="ivm-0f-VPM" firstAttribute="centerX" secondItem="lQ1-Nh-nEt" secondAttribute="centerX" id="zMo-bH-7ld"/>
+                            <constraint firstItem="PJS-x8-fkK" firstAttribute="centerX" secondItem="lQ1-Nh-nEt" secondAttribute="centerX" id="zrV-PB-dQB"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Guilt" image="circle.fill" catalog="system" id="iUN-LN-bjk">
+                        <color key="badgeColor" systemColor="labelColor"/>
+                    </tabBarItem>
+                    <navigationItem key="navigationItem" id="eAs-Be-ork"/>
+                    <connections>
+                        <outlet property="BuddyImageView" destination="UyL-qq-HKn" id="ZBs-61-2Ym"/>
+                        <outlet property="CurrentDate" destination="FVo-Qx-4IQ" id="RpB-uZ-6cY"/>
+                        <outlet property="Expense" destination="PJS-x8-fkK" id="Vb8-y6-8Ah"/>
+                        <outlet property="ImageView" destination="tgt-44-lnI" id="zAF-ij-h5r"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6bc-3g-nhD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="714.49275362318849" y="-147.32142857142856"/>
+        </scene>
+        <!--FirstViewController2-->
+        <scene sceneID="CqO-sS-dXz">
+            <objects>
+                <viewController id="Wda-4o-dOj" userLabel="FirstViewController2" customClass="FirstViewController2" customModule="Money" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gx1-v8-0lf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="94u-xI-Aso">
+                                <rect key="frame" x="0.0" y="44" width="414" height="754"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lki-cd-AtI">
+                                <rect key="frame" x="58" y="826" width="298" height="42"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Back">
+                                    <fontDescription key="titleFontDescription" name="Baby-Doll" family="Baby Doll" pointSize="30"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="JS7-Xg-4II" kind="unwind" unwindAction="bluesegueWithSegue:" id="g9y-jf-O1k"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="3Zl-Vn-Bsw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="94u-xI-Aso" firstAttribute="leading" secondItem="3Zl-Vn-Bsw" secondAttribute="leading" id="AGl-9a-zsQ"/>
+                            <constraint firstItem="lki-cd-AtI" firstAttribute="centerX" secondItem="gx1-v8-0lf" secondAttribute="centerX" id="FTi-MR-ogb"/>
+                            <constraint firstItem="lki-cd-AtI" firstAttribute="top" secondItem="94u-xI-Aso" secondAttribute="bottom" constant="22" id="Mxx-qx-5p5"/>
+                            <constraint firstItem="3Zl-Vn-Bsw" firstAttribute="bottom" secondItem="lki-cd-AtI" secondAttribute="bottom" id="Qhn-Pn-6CM"/>
+                            <constraint firstItem="3Zl-Vn-Bsw" firstAttribute="trailing" secondItem="94u-xI-Aso" secondAttribute="trailing" id="UaL-o4-CYg"/>
+                            <constraint firstItem="94u-xI-Aso" firstAttribute="top" secondItem="3Zl-Vn-Bsw" secondAttribute="top" id="bDM-da-Bkr"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="yQ0-lO-PDr"/>
+                    <connections>
+                        <outlet property="tableView" destination="94u-xI-Aso" id="pNa-4g-nf7"/>
+                        <segue destination="Bl9-DN-TbM" kind="show" identifier="segue1" id="jbh-te-5BZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xOY-8W-W0h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="JS7-Xg-4II" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1595.6521739130435" y="-147.32142857142856"/>
+        </scene>
+        <!--FirstViewController1-->
+        <scene sceneID="T8G-3F-7bH">
+            <objects>
+                <viewController id="Bl9-DN-TbM" userLabel="FirstViewController1" customClass="FirstViewController1" customModule="Money" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="k35-1l-4jp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="37" translatesAutoresizingMaskIntoConstraints="NO" id="kW2-BV-y4u">
+                                <rect key="frame" x="102.5" y="273.5" width="209" height="295.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="XT2-xe-ecX">
+                                        <rect key="frame" x="0.0" y="0.0" width="209" height="42"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LxA-ug-Sqt">
+                                                <rect key="frame" x="0.0" y="0.0" width="49" height="42"/>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="1">
+                                                    <fontDescription key="titleFontDescription" name="Baby-Doll" family="Baby Doll" pointSize="31"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="numberClicked:" destination="Bl9-DN-TbM" eventType="touchUpInside" id="cj3-mw-dKy"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="reF-hj-VNp">
+                                                <rect key="frame" x="80" y="0.0" width="49" height="42"/>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="2">
+                                                    <fontDescription key="titleFontDescription" name="Baby-Doll" family="Baby Doll" pointSize="30"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="numberClicked:" destination="Bl9-DN-TbM" eventType="touchUpInside" id="uu0-bM-A5N"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cAz-8p-CPb">
+                                                <rect key="frame" x="160" y="0.0" width="49" height="42"/>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="3">
+                                                    <fontDescription key="titleFontDescription" name="Baby-Doll" family="Baby Doll" pointSize="30"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="numberClicked:" destination="Bl9-DN-TbM" eventType="touchUpInside" id="dCm-1W-yPZ"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="2zW-pV-8ua">
+                                        <rect key="frame" x="0.0" y="79" width="209" height="41.5"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d3G-oY-vDS">
+                                                <rect key="frame" x="0.0" y="0.0" width="49" height="41.5"/>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="4">
+                                                    <fontDescription key="titleFontDescription" name="Baby-Doll" family="Baby Doll" pointSize="30"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="numberClicked:" destination="Bl9-DN-TbM" eventType="touchUpInside" id="EKt-tj-2i6"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hpU-ZA-P0J">
+                                                <rect key="frame" x="80" y="0.0" width="49" height="41.5"/>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="5">
+                                                    <fontDescription key="titleFontDescription" name="Baby-Doll" family="Baby Doll" pointSize="30"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="numberClicked:" destination="Bl9-DN-TbM" eventType="touchUpInside" id="bHX-Fb-dcA"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lpj-3t-W1r">
+                                                <rect key="frame" x="160" y="0.0" width="49" height="41.5"/>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="6">
+                                                    <fontDescription key="titleFontDescription" name="Baby-Doll" family="Baby Doll" pointSize="30"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="numberClicked:" destination="Bl9-DN-TbM" eventType="touchUpInside" id="dfy-1t-SnC"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="qJN-XI-ulq">
+                                        <rect key="frame" x="0.0" y="157.5" width="209" height="41.5"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AsC-sb-CLb">
+                                                <rect key="frame" x="0.0" y="0.0" width="49" height="41.5"/>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="7">
+                                                    <fontDescription key="titleFontDescription" name="Baby-Doll" family="Baby Doll" pointSize="30"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="numberClicked:" destination="Bl9-DN-TbM" eventType="touchUpInside" id="FIR-G7-MNa"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cxl-eD-3mR">
+                                                <rect key="frame" x="80" y="0.0" width="49" height="41.5"/>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="8">
+                                                    <fontDescription key="titleFontDescription" name="Baby-Doll" family="Baby Doll" pointSize="30"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="numberClicked:" destination="Bl9-DN-TbM" eventType="touchUpInside" id="PG1-D9-GXN"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sau-YA-44Y">
+                                                <rect key="frame" x="160" y="0.0" width="49" height="41.5"/>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="9">
+                                                    <fontDescription key="titleFontDescription" name="Baby-Doll" family="Baby Doll" pointSize="30"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="numberClicked:" destination="Bl9-DN-TbM" eventType="touchUpInside" id="WhR-ha-MYd"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="3i9-1m-TB5">
+                                        <rect key="frame" x="0.0" y="236" width="209" height="59.5"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BzS-BA-M16">
+                                                <rect key="frame" x="0.0" y="0.0" width="49" height="59.5"/>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="-">
+                                                    <fontDescription key="titleFontDescription" name="Baby-Doll" family="Baby Doll" pointSize="50"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="plusminusClicked:" destination="Bl9-DN-TbM" eventType="touchUpInside" id="WrJ-LE-2AW"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ii-ir-hFC">
+                                                <rect key="frame" x="80" y="0.0" width="49" height="59.5"/>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="0">
+                                                    <fontDescription key="titleFontDescription" name="Baby-Doll" family="Baby Doll" pointSize="32"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="numberClicked:" destination="Bl9-DN-TbM" eventType="touchUpInside" id="Hm8-tR-WcK"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qtd-9E-q8e">
+                                                <rect key="frame" x="160" y="0.0" width="49" height="59.5"/>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="+">
+                                                    <fontDescription key="titleFontDescription" name="Baby-Doll" family="Baby Doll" pointSize="50"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="plusminusClicked:" destination="Bl9-DN-TbM" eventType="touchUpInside" id="gQN-4c-3D7"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u3Z-ge-OKM">
+                                <rect key="frame" x="147" y="209" width="120" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="9so-Un-SFw"/>
+                                    <constraint firstAttribute="height" constant="30" id="sY5-do-7Hg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gtK-7k-BZC">
+                                <rect key="frame" x="272.5" y="208" width="47.5" height="31"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="delete.left" catalog="system"/>
+                                <connections>
+                                    <action selector="clearClicked:" destination="Bl9-DN-TbM" eventType="touchUpInside" id="u9I-eA-0VR"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IsM-UR-EWQ">
+                                <rect key="frame" x="157.5" y="163" width="99.5" height="34.5"/>
+                                <fontDescription key="fontDescription" name="Baby-Doll" family="Baby Doll" pointSize="38"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="FL4-q5-xDf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="IsM-UR-EWQ" firstAttribute="top" secondItem="FL4-q5-xDf" secondAttribute="top" constant="119" id="2eN-h0-Kew"/>
+                            <constraint firstItem="FL4-q5-xDf" firstAttribute="trailing" secondItem="gtK-7k-BZC" secondAttribute="trailing" constant="94" id="EWe-xZ-N1w"/>
+                            <constraint firstItem="IsM-UR-EWQ" firstAttribute="centerX" secondItem="k35-1l-4jp" secondAttribute="centerX" id="GbE-Uo-Nje"/>
+                            <constraint firstItem="u3Z-ge-OKM" firstAttribute="centerX" secondItem="k35-1l-4jp" secondAttribute="centerX" id="dh2-bu-zuY"/>
+                            <constraint firstItem="kW2-BV-y4u" firstAttribute="centerX" secondItem="k35-1l-4jp" secondAttribute="centerX" id="h3i-JK-aa7"/>
+                            <constraint firstItem="kW2-BV-y4u" firstAttribute="centerY" secondItem="k35-1l-4jp" secondAttribute="centerY" id="lcr-ls-rge"/>
+                            <constraint firstItem="kW2-BV-y4u" firstAttribute="top" secondItem="u3Z-ge-OKM" secondAttribute="bottom" constant="34.5" id="rAK-Aj-v3N"/>
+                            <constraint firstItem="gtK-7k-BZC" firstAttribute="bottom" secondItem="u3Z-ge-OKM" secondAttribute="bottom" id="v8J-Fk-n3G"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="xwh-B5-4LQ"/>
+                    <connections>
+                        <outlet property="CategoryLabel" destination="IsM-UR-EWQ" id="CDN-If-AWd"/>
+                        <outlet property="ResultLabel" destination="u3Z-ge-OKM" id="ocQ-9f-S1h"/>
+                        <outlet property="resultLabel" destination="u3Z-ge-OKM" id="GQ1-b4-DFg"/>
+                        <segue destination="9cR-RK-Xm2" kind="unwind" identifier="bluesegue" unwindAction="bluesegueWithSegue:" id="mPd-SR-dnM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OLT-mX-4FE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="9cR-RK-Xm2" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2447.826086956522" y="-147.32142857142856"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="XH7-bS-VuR">
+            <objects>
+                <tabBarController storyboardIdentifier="tbc" useStoryboardIdentifierAsRestorationIdentifier="YES" id="0K2-Xx-qun" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" id="Bvg-sI-ypZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" systemColor="opaqueSeparatorColor"/>
+                        <color key="selectedImageTintColor" systemColor="labelColor"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="iJw-8r-DDF" kind="relationship" relationship="viewControllers" id="TuQ-SW-iNd"/>
+                        <segue destination="f2z-tX-1KM" kind="relationship" relationship="viewControllers" id="rhu-nG-67B"/>
+                        <segue destination="FNg-5l-OeN" kind="relationship" relationship="viewControllers" id="66Q-HA-0UJ"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xPc-xl-eUl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-274" y="510"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="MgL-f8-oqw"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="Dead Buddy.png" width="183.27272033691406" height="183.27272033691406"/>
+        <image name="circle.fill" catalog="system" width="128" height="121"/>
+        <image name="delete.left" catalog="system" width="128" height="104"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
